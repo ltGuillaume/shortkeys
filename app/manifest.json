@@ -76,6 +76,10 @@
     "50-capturescreenshot": {"description": "UTILITY: Capture current viewport screenshot"},
     "51-capturefullsizescreenshot": {"description": "UTILITY: Capture full size screenshot (max height is 16,348px due to browser limitation)"},
     "52-forcecapturefullsizescreenshot": {"description": "UTILITY: Force capture full size screenshot (when window is not scrollable)"}
+    "50-closetabmovetonext": {"description": "TABS: Close tab and move to next tab"},
+    "51-closetabmovetoprev": {"description": "TABS: Close tab and move to previous tab"},
+    "52-closetabmovetofirst": {"description": "TABS: Close tab and move to first tab"},
+    "53-closetabmovetolast": {"description": "TABS: Close tab and move to last tab"}
   },
   "options_ui": {
     "page": "options/options.html",
