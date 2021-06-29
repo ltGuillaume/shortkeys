@@ -206,14 +206,14 @@ let handleAction = (action, request = {}) => {
     browser.tabs.query({currentWindow: true, active: true}).then(function(tab) {
       copyToClipboard(tab[0].url)
     })
-  } else if (action === 'searchgoogle') {
+  } else if (action === 'search') {
     browser.tabs.executeScript({
       code: 'window.getSelection().toString();'
     }).then(function(selection) {
       if (selection[0]) {
         let query = encodeURIComponent(selection[0])
         browser.tabs.query({currentWindow: true, active: true}).then(function(tabs) {
-          browser.tabs.create({url: 'https://www.google.com/search?q=' + query, index: tabs[0].index + 1})
+          browser.tabs.create({url: 'https://eu.startpage.com/do/search?query=' + query, index: tabs[0].index + 1})
         })
       }
     })

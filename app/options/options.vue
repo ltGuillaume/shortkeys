@@ -280,7 +280,7 @@ export default {
                     {value: 'opensettings', label: 'Open Settings Page', builtin: true},
                     {value: 'openextensions', label: 'Open Extensions Page', builtin: true},
                     {value: 'openshortcuts', label: 'Open Keyboard Shortcuts Page (Chrome)', builtin: true},
-                    {value: 'searchgoogle', label: 'Search Google for selected text', builtin: true},
+                    {value: 'search', label: 'Search Startpage for selected text', builtin: true},
                 ],
                 'Bookmarks': [
                     {value: 'openbookmark', label: 'Open bookmark/bookmarklet in current tab'},

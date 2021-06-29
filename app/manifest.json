@@ -46,7 +46,7 @@
     "24-forward": {"description": "LOCATION: Go forward"},
     "25-reload": {"description": "LOCATION: Reload"},
     "25-hardreload": {"description": "LOCATION: Hard reload (bypass cache)"},
-    "26-searchgoogle": {"description": "LOCATION: Search Google for selected text"},
+    "26-search": {"description": "LOCATION: Search Startpage for selected text"},
     "27-copyurl": {"description": "LOCATION: Copy URL to clipboard"},
     "28-top": {"description": "SCROLLING: Scroll to top"},
     "29-bottom": {"description": "SCROLLING: Scroll to bottom"},
