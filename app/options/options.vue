@@ -279,7 +279,7 @@ export default {
                     {value: 'copyurl', label: 'Copy URL', builtin: true},
                     {value: 'opensettings', label: 'Open Settings Page', builtin: true},
                     {value: 'openextensions', label: 'Open Extensions Page', builtin: true},
-                    {value: 'openshortcuts', label: 'Open Keyboard Shortcuts Page', builtin: true},
+                    {value: 'openshortcuts', label: 'Open Keyboard Shortcuts Page (Chrome)', builtin: true},
                     {value: 'searchgoogle', label: 'Search Google for selected text', builtin: true},
                 ],
                 'Bookmarks': [

@@ -17,9 +17,11 @@ let copyToClipboard = (text) => {
   document.body.removeChild(copyDiv)
 }
 
+let isFirefox = process.env.VENDOR === 'firefox';
+
 let selectTab = (direction, {closeFormerlyCurrentTab = false, permitWrapping = true}={}) => {
   let searchParam = { currentWindow: true };
-  if (process.env.VENDOR === 'firefox') {
+  if (isFirefox) {
     searchParam.hidden = false;
   }
   browser.tabs.query(searchParam).then(function(tabs) {
@@ -125,10 +127,10 @@ let handleAction = (action, request = {}) => {
   } else if (action === 'print') {
     browser.tabs.executeScript(null, {'code': 'window.print()'})
   } else if (action === 'opensettings') {
-    browser.tabs.create({ url: 'chrome://settings', active: true })
+    browser.tabs.create({ url: isFirefox ? 'about:preferences' : 'chrome://settings', active: true })
   } else if (action === 'openextensions') {
-    browser.tabs.create({ url: 'chrome://extensions', active: true })
-  } else if (action === 'openshortcuts') {
+    browser.tabs.create({ url: isFirefox ? 'about:addons' : 'chrome://extensions', active: true })
+  } else if (action === 'openshortcuts' && !isFirefox) {
     browser.tabs.create({ url: 'chrome://extensions/shortcuts', active: true })
   } else if (action === 'nexttab') {
     selectTab('next')
