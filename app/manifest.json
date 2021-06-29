@@ -1,4 +1,9 @@
 {
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "@asymm_shortkeys"
+		}
+	},
   "name": "__MSG_appName__",
   "short_name": "__MSG_appShortName__",
   "description": "__MSG_appDescription__",
